@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="MedicareTestcases.SignUpAsUser">
+        <methods>
+          <include name="openUrl"/>
+          <include name="medicareWebPageTest"/>
+        </methods>
+      </class> <!-- MedicareTestcases.SignUpAsUser -->
+      <class name="MedicareTestcases.LoginPgAsSupplier">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="openUrl"/>
+        </methods>
+      </class> <!-- MedicareTestcases.LoginPgAsSupplier -->
+      <class name="MedicareTestcases.LoginPageAsUser">
+        <methods>
+          <include name="openUrl"/>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- MedicareTestcases.LoginPageAsUser -->
+      <class name="MedicareTestcases.SignUpAsSupplier">
+        <methods>
+          <include name="medicareWebPageTest"/>
+          <include name="openUrl"/>
+        </methods>
+      </class> <!-- MedicareTestcases.SignUpAsSupplier -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
